@@ -1,0 +1,24 @@
+# Rename this file to terraform.tfvars and replace required variables
+# Provider
+access_key = "access_key_here"
+secret_key = "secret_key_here"
+region = "default_aws_region_here_ex_us-east-1"
+# Tags
+name = "replace_with_resource_name"
+owner = "replace_with_resource_owner"
+env = "replace_with_environment"
+# VPC
+vpc_id = "vpc_id_here_ex_vpc-12345678"
+subnet_id = "subnet_id_here_subnet-12345678"
+# Instance
+count = "2" # Number of instances to provision
+ami = "replace_with_ami"
+instance_type = "t2.micro" # Instance type to use
+key_name = "replace_with_ssh_key_pair_name"
+associate_public_ip_address = "false" 
+root_volume_type = "gp2" # Root disk type
+root_volume_size = "10"  # Root disk size in GB
+data_volume_type = "gp2" # Data disk type
+data_volume_size = "10"  # Data disk size in GB
+data_device_name = "/dev/xvdb" # Data disk name
+snapshot_id = "replace_with_snapshot_id_to_use_for_data_volume"
